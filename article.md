@@ -159,14 +159,18 @@ As summarized in Table 1, the combined use of these texts follows a principle of
 | Phase 3 | *Ḥadāʾiq al-Shaqāʾiq* | Different text and different scribe | Genre- and language-level generalization |
 <!-- #endregion -->
 
+<!-- #region tags=["hermeneutics"] -->
 ## Model Architecture and Training Process
 
+<!-- #endregion -->
 
+<!-- #region tags=["hermeneutics"] -->
 The HTR model in this study was trained in Transkribus using the HTR+ (CNN–LSTM) architecture. As an initial experiment, a transfer-learning strategy was applied by initializing training from our previously released Printed Ottoman Turkish model, with the expectation that prior exposure to Arabic-script letterforms would accelerate convergence on naskh manuscripts. However, empirical results showed limited transferability across the print–manuscript domain.
 
 This limitation can be attributed to fundamental qualitative differences between the two data domains. The printed model is based on nineteenth- and twentieth-century periodicals, whereas the manuscript material examined here reflects sixteenth- and seventeenth-century scribal practices. Differences in period-specific language use, line structure, scribal conventions, and lexical composition outweighed superficial similarities in letter shapes, preventing effective knowledge transfer.
 
 These findings indicate that model performance in Ottoman Turkish HTR is determined less by architectural choice or pretraining strategy than by the representativeness and internal structure of manuscript ground truth data. Accordingly, the present study foregrounds data composition, scribal variation, and genre diversity as primary methodological variables shaping recognition accuracy, rather than relying on transfer learning across historically and materially distinct domains.
+<!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
 ## Model Training Strategy: The Separation of Layout Analysis and HTR Processes
@@ -311,9 +315,8 @@ These persistent error patterns highlight a critical divergence regarding data e
 ## Limitations
 <!-- #endregion -->
 
-<!-- #region -->
 
-
+<!-- #region tags=["hermeneutics"] -->
 This study constitutes one of the first experimental attempts to assess the feasibility of developing an HTR model for Ottoman Turkish written in naskh script and to quantitatively document the relationship between data diversity and model accuracy. The three-stage training design demonstrates that model performance is closely tied not only to the technical architecture but also to the structure of the training data, scribal diversity, and the linguistic properties of the texts. In particular, the fact that the initial model trained on a single scribe and a single work achieved the lowest error rate indicates that scribal idiosyncrasy is a decisive variable shaping HTR performance in Ottoman manuscripts. By contrast, the inclusion of additional scribes and different works increased paleographic and linguistic variation, leading to a gradual decline in accuracy. These findings suggest that large-scale Ottoman Turkish HTR models require not merely more data, but a carefully balanced data architecture that explicitly accounts for variation across scribes, texts, and linguistic registers.
 
 An examination of the model outputs shows that accuracy does not display a homogeneous distribution at the line level: while full accuracy is achieved in some lines, distinct clusters of errors emerge in others, particularly within specific structural components. This indicates that the model’s learning behavior is sensitive to context, line layout, and writing density, and suggests that future improvements may be achieved through layout-aware decoding, title–main text separation, the integration of language models, and LLM-based post-processing strategies.
