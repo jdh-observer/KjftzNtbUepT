@@ -6,16 +6,58 @@ jupyter:
       format_name: markdown
       format_version: '1.3'
       jupytext_version: 1.19.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
-<!-- #region tags=["narrative"] -->
-### **From Manuscript to Machine: Developing an Ottoman Turkish (Naskh) AI Model with Transkribus**
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["title"] -->
+# From Manuscript to Machine: Developing an Ottoman Turkish (Naskh) AI Model with Transkribus
+<!-- #endregion -->
 
-**Elif Derin & Fatma Aladağ**
+<!-- #region tags=["contributor"] -->
+ ### Elif Derin[![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID) 
+Institution
+<!-- #endregion -->
 
-### 
+<!-- #region tags=["contributor"] -->
+### Fatma Aladağ [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID_IF_EXIST) 
+Institution
+<!-- #endregion -->
 
-### **Introduction**
+<!-- #region tags=["copyright"] -->
+[![cc-by](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) 
+©<AUTHOR or ORGANIZATION / FUNDER>. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- #endregion -->
+
+<!-- #region tags=["copyright"] -->
+[![cc-by-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
+©<AUTHOR or ORGANIZATION / FUNDER>. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<!-- #endregion -->
+
+```python tags=["cover"]
+from IPython.display import Image, display
+
+display(Image("./media/placeholder.png"))
+```
+
+<!-- #region tags=["disclaimer"] -->
+ (optional) This article was orginally published (...)
+<!-- #endregion -->
+
+<!-- #region tags=["keywords"] -->
+FirstKeyword, SecondKeyword, AlwaysSeparatedByAComma
+<!-- #endregion -->
+
+<!-- #region tags=["abstract"] -->
+This is an abstract (...)
+<!-- #endregion -->
+
+## Introduction
+
 
 Over the past two decades, the digital transformation of manuscript
 studies has not only democratized scholarly access to collections but
@@ -74,11 +116,10 @@ explicit methodological aim to model not merely character recognition,
 but also the formal and codicological features intrinsic to Ottoman
 manuscript culture.
 
-<!-- #endregion -->
 
-<!-- #region tags=["narrative"] -->
 
-### **HTR Technologies in Historical Documents: Developments and Research Implications**
+## HTR Technologies in Historical Documents: Developments and Research Implications
+
 
 Deep learning–based Handwritten Text Recognition (HTR) systems have
 brought about a major transformation in the digitisation of historical
@@ -159,11 +200,11 @@ Arabic-script writing systems and the philological and epistemological
 implications of transferring historical texts into a modern Latin-based
 script.
 
-<!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
 
-### **Rationale for Tool Selection**
+## Rationale for Tool Selection
+
+
 
 In HTR projects, data management constitutes a methodological stage as
 decisive as model training itself. The FAIR principles (Findable,
@@ -223,12 +264,12 @@ technical capability, but rather as part of a broader methodological
 commitment to developing a sustainable, shareable, and
 community-oriented HTR practice for Ottoman manuscript studies.
 
+
+<!-- #region tags=["hermeneutics"] -->
+## Construction of the Dataset
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
-
-### **Construction of the Dataset**
-
 The construction of the training dataset was designed to account
 simultaneously for the paleographic diversity of the Ottoman Turkish
 manuscript tradition and the learning dynamics of HTR models. This study
@@ -380,9 +421,8 @@ their role in HTR model development.
 
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+## Model Architecture and Training Process
 
-### ***Model Architecture and Training Process***
 
 The HTR model in this study was trained in Transkribus using the HTR+
 (CNN–LSTM) architecture. As an initial experiment, a transfer-learning
@@ -408,12 +448,11 @@ scribal variation, and genre diversity as primary methodological
 variables shaping recognition accuracy, rather than relying on transfer
 learning across historically and materially distinct domains.
 
+<!-- #region tags=["hermeneutics"] -->
+## Model Training Strategy: The Separation of Layout Analysis and HTR Processes
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
-
-### **Model Training Strategy: The Separation of Layout Analysis and HTR Processes**
-
 In this study, the model development workflow was structured around two
 functionally distinct training pipelines: page layout analysis and
 automatic handwritten text recognition (HTR). Although both processes
@@ -495,9 +534,10 @@ script.
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
+## Tagging Strategy and PAGE XML Structu
+<!-- #endregion -->
 
-### **Tagging Strategy and PAGE XML Structure**
-
+<!-- #region tags=["hermeneutics"] -->
 The tagging strategy described in this section constitutes the epistemic
 and technical foundation of the layout analysis discussed above, as
 these structural annotations provide the training data through which
@@ -554,9 +594,8 @@ range of digital humanities applications.
 
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+## Three-Stage Model Training and Performance Comparison
 
-### **Three-Stage Model Training and Performance Comparison**
 
 The model development process was conducted using a three-stage training
 design to examine the impact of data diversity and scribal variation on
@@ -627,11 +666,13 @@ Ottoman manuscripts is not a linear process; rather, at each stage where
 data diversity expands, the model is compelled to undergo a renewed
 learning phase.
 
-<!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
 
-### **Qualitative Error Analysis and Paleographic Challenges**
+## Qualitative Error Analysis and Paleographic Challenges
+
+<!-- #region -->
+
+
 
 Although the model achieved a low Character Error Rate (CER), a
 qualitative inspection reveals specific patterns of misinterpretation
@@ -693,7 +734,11 @@ expansion beyond what is typically required for simpler scripts.
 
 <!-- #region tags=["hermeneutics"] -->
 
-### ***Limitations***
+## Limitations
+<!-- #endregion -->
+
+<!-- #region -->
+
 
 This study constitutes one of the first experimental attempts to assess
 the feasibility of developing an HTR model for Ottoman Turkish written
@@ -762,9 +807,8 @@ to Ottoman paleography.
 
 <!-- #endregion -->
 
-<!-- #region tags=["narrative"] -->
+## Conclusion
 
-### **Conclusion**
 
 This study represents one of the first systematic experimental
 evaluations of the feasibility of developing a handwritten text
@@ -812,4 +856,3 @@ the historical, philological, and material complexity of Ottoman
 manuscript culture, the study provides a methodological foundation for
 future work at the intersection of digital humanities, paleography, and
 computational text analysis.
-<!-- #endregion -->
