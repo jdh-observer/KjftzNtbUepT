@@ -45,9 +45,6 @@ from IPython.display import Image, display
 display(Image("./media/placeholder.png"))
 ```
 
-<!-- #region tags=["disclaimer"] -->
- (optional) This article was orginally published (...)
-<!-- #endregion -->
 
 <!-- #region tags=["keywords"] -->
 FirstKeyword, SecondKeyword, AlwaysSeparatedByAComma
