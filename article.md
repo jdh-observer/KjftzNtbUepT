@@ -18,12 +18,12 @@ jupyter:
 
 <!-- #region tags=["contributor"] -->
  ### Elif Derin[![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID) 
-Institution
+Fatih Sultan Mehmet University
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
 ### Fatma Aladağ [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID_IF_EXIST) 
-Institution
+Marmara University
 <!-- #endregion -->
 
 <!-- #region tags=["copyright"] -->
