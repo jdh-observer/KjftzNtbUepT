@@ -720,8 +720,8 @@ groups:
 1.  Diacritical Ambiguity (Dot Placement): The model occasionally
     confuses letters that share the same skeletal structure (rasm) but
     differ in dot placement. For instance, distinguishing between Ra
-    (<span dir="rtl">ر</span>) and Za (<span dir="rtl">ز</span>), or Ta
-    (<span dir="rtl">ت</span>) and Tha (<span dir="rtl">ث</span>),
+    (ر) and Za (ز), or Ta
+    (ت) and Tha (ث),
     becomes problematic when the diacritical dots are faint, physically
     damaged, or written with irregular spacing.
 
@@ -732,7 +732,7 @@ groups:
     multiple phonemes depending on the context. A recurring example is
     the misreading of implied vowels, such as transcribing the word
     forms like ide vs. ede, or incorrectly inferring the phonetic value
-    of the letter Waw (<span dir="rtl">و</span>) or Ya (y) in the
+    of the letter Waw (و) or Ya (y) in the
     absence of explicit vocalization marks.
 
 3.  Omission of Secondary Diacritics (Gemination): While the base
