@@ -1,2 +1,0 @@
-# code owner for the repo
-*  @jdh-observer @eliselavy
