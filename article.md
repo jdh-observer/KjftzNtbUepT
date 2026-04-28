@@ -18,12 +18,12 @@ jupyter:
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
-### Elif Derin[![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID)
+### Elif Derin[![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3412-5664)
 Fatih Sultan Mehmet University
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
-### Fatma Aladağ [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/ORCID_ID_IF_EXIST) 
+### Fatma Aladağ [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3455-6181) 
 Marmara University
 <!-- #endregion -->
 
@@ -45,11 +45,16 @@ display(Image("./media/placeholder.png"))
 
 
 <!-- #region tags=["keywords"] -->
-FirstKeyword, SecondKeyword, AlwaysSeparatedByAComma
+Ottoman Turkish manuscripts, Handwritten Text Recognition (HTR), Naskh script, Transkribus, Digital History
+
 <!-- #endregion -->
 
 <!-- #region tags=["abstract"] -->
-This is an abstract (...)
+This article presents a systematic experimental evaluation of handwritten text recognition (HTR) for Ottoman Turkish manuscripts written in naskh script. Situating the study within recent developments in digital humanities and computational archival science, it examines how paleographic, scribal, and textual variation affect model performance in a Transkribus-based workflow. The analysis is based on a corpus of 160 folios (320 pages) and approximately 90,000 words. The dataset includes not only line-level transcriptions but also structural annotations such as headings, marginalia, catchwords, page numbers, and seals, enabling the separate implementation of layout analysis and HTR processes.
+
+Using a three-stage training design, the study evaluates the impact of incremental data diversification across scribes and texts. The results show that model accuracy is closely related to the structure and heterogeneity of the training data rather than to data volume alone. While the model trained on a single scribe achieved the lowest Character Error Rate (CER), the inclusion of additional scribes and texts led to a non-linear increase in error rates. Qualitative error analysis identifies recurring challenges related to diacritical ambiguity, orthographic variation, and the omission of secondary diacritics.
+
+The study concludes that Ottoman Turkish HTR requires careful consideration of paleographic variation and dataset composition in order to achieve reliable and generalizable results.
 <!-- #endregion -->
 
 ## Introduction
@@ -57,9 +62,17 @@ This is an abstract (...)
 
 Over the past two decades, the digital transformation of manuscript studies has not only democratized scholarly access to collections but also significantly reduced the physical wear of original materials. However, this process —often described as the “first wave of digitization”—has largely focused on the preservation and dissemination of manuscript images. Today, with the rise of Digital Humanities and Computational Archival Science, a second wave of digitization is emerging, one that prioritizes data mining, automated recognition, and advanced analytical processing capacities.
 
-In this context, the digital transformation of Ottoman Turkish is not merely a technical step to facilitate access to historical texts; it establishes an interdisciplinary research ecosystem where traditional disciplines such as historiography, philology, and paleography converge under the framework of Digital Humanities. Ottoman Turkish exhibits profound structural complexity due to its “cursive-like” nature —where letter forms vary according to their position— as well as variable baseline alignments and non-standardized orthographic practices. These paleographic challenges, coupled with the lack of a one-to-one correspondence between the original script and the modern Latin alphabet, elevate the task beyond simple transcription into a “multi-layered visual-statistical modeling problem.” Handwritten Text Recognition (HTR) technology addresses this by analyzing text at the line level through a statistical pattern recognition approach, integrating visual form and linguistic continuity into a coherent framework that transforms Ottoman archives into “collections as data” (Kırmızıaltın and Wrisley 2022).
+<!-- #region citation-manager={"citations": {"": []}} -->
+In this context, the digital transformation of Ottoman Turkish is not merely a technical step to facilitate access to historical texts it establishes an interdisciplinary research ecosystem where traditional disciplines such as historiography, philology, and paleography converge under the framework of Digital Humanities. Ottoman Turkish exhibits profound structural complexity due to its “cursive-like” nature —where letter forms vary according to their position— as well as variable baseline alignments and non-standardized orthographic practices. These paleographic challenges, coupled with the lack of a one-to-one correspondence between the original script and the modern Latin alphabet, elevate the task beyond simple transcription into a “multi-layered visual-statistical modeling problem.” Handwritten Text Recognition (HTR) technology addresses this by analyzing text at the line level through a statistical pattern recognition approach, integrating visual form and linguistic continuity into a coherent framework that transforms Ottoman archives into “collections as data” (<cite data-cite="7C13846739/2FLDMCDXPC"></cite>).
 
-In recent years, advances in AI-based text recognition technologies have made it possible to incorporate manuscript materials into machine learning workflows. In particular, the Transkribus platform offers a functional research environment for historians and scholars in the humanities by enabling the training of custom models on user-provided data without requiring programming expertise (Aladağ and Derin, 2023). The integration of features such as line segmentation, layout analysis, custom HTR model training, and export in TEI/PAGE XML formats allows historical manuscripts to be transformed into data that is not only readable but also computationally analyzable.
+<!-- #endregion -->
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+In recent years, advances in AI-based text recognition technologies have made it possible to incorporate manuscript materials into machine learning workflows. In particular, the Transkribus platform offers a functional research environment for historians and scholars in the humanities by enabling the training of custom models on user-provided data without requiring programming expertise (Aladağ and Derin, 2023).
+
+<!-- #endregion -->
+
+The integration of features such as line segmentation, layout analysis, custom HTR model training, and export in TEI/PAGE XML formats allows historical manuscripts to be transformed into data that is not only readable but also computationally analyzable.
 
 This study represents a step toward rendering Ottoman Turkish manuscripts written in the naskh (*nesih*) script digitally processable. Through a three-stage training strategy applied to Ottoman naskh manuscripts, the article presents one of the first quantitative assessments demonstrating that scribal and textual diversity affect HTR error rates in a non-linear manner. The model developed on the Transkribus platform integrates both automatic transcription (HTR) and layout recognition functionalities and was trained on a corpus comprising 160 folios (320 pages) and approximately 90,000 words produced by multiple scribes.
 
@@ -69,12 +82,23 @@ During the training process, not only text lines but also structural elements su
 
 ## HTR Technologies in Historical Documents: Developments and Research Implications
 
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 Deep learning–based Handwritten Text Recognition (HTR) systems have brought about a major transformation in the digitisation of historical documents over the past decade. In particular, Europe-based projects have established large-scale datasets for Gothic, Kurrent, and Latin scripts, thereby defining the practical accuracy limits of HTR models and introducing a comparable evaluation standard based on the Character Error Rate (CER). Within this framework, the literature has also identified threshold values indicating when automated recognition becomes meaningful and efficient for scholarly use. Hodel characterises a CER of 12% as a critical threshold at which automated transcription becomes more economical and time-efficient than manual transcription (2020). Similarly, the Transkribus platform considers CER values of 10% or below to represent efficient and practically usable results for automated transcription. Against these benchmarks, the general model developed by Hodel et al. (2021) for German Kurrent, achieving a CER in the range of 2–5%, demonstrates an exceptionally high level of accuracy for historical material.
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 The primary environment in which these accuracy thresholds and evaluation criteria have been translated into research practice has been the Transkribus platform. Mühlberger et al. (2019) describe Transkribus as a turning point in archival research, emphasizing that the ability for users to generate their own datasets and develop customised models has transformed historical manuscript recognition into a practical research tool. However, the majority of these models have been developed for Latin-based writing systems; consequently, the platform's technical infrastructure was adapted to Arabic-script writing systems at a relatively late stage (Nockels et al., 2022).
 
 The challenges encountered in developing HTR models for Arabic-script manuscripts stem not so much from the general structural characteristics of the writing system itself, but rather from how these characteristics are reflected in automated recognition processes. In Ottoman Turkish manuscripts, letterform variation depending on position within the word, the absent or irregular use of diacritics or dots, fluctuations in baseline alignment, and divergent scribal practices all contribute to cumulative errors, particularly at the stages of line segmentation and character-level alignment. Consequently, models developed for Ottoman Turkish must be trained not merely to recognize Arabic-script writing in general, but to learn visual patterns specific to a particular script type and manuscript practice.
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 This requirement also intersects with a broader structural issue identified by Nilsson-Fernàndez and Dombrowski (2022) in the context of multilingual digital humanities. As the authors argue, Latin-centered digital infrastructures and text-processing tools are built upon a limited set of assumptions that do not readily accommodate right-to-left (RTL) and context-sensitive writing systems. The challenges encountered during model training for Ottoman Turkish manuscripts within the Transkribus environment can therefore be understood as a practical manifestation of this structural mismatch. Within the technical framework provided by the platform, the deliberate selection of training data, annotation strategies, and modeling decisions tailored to Ottoman Turkish thus becomes a methodological necessity rather than a purely technical preference.
 
@@ -86,13 +110,23 @@ Ottoman Turkish constitutes a hybrid linguistic structure characterized by vocab
 
 ## Rationale for Tool Selection
 
+<!-- #region citation-manager={"citations": {"": []}} -->
 
+<!-- #endregion -->
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 In HTR projects, data management constitutes a methodological stage as decisive as model training itself. The FAIR principles (Findable, Accessible, Interoperable, Reusable) emphasize long-term reusability and structural transparency of research data (Wilkinson et al. 2016), while the CARE principles foreground issues of data ownership, representational responsibility, and community-oriented access in cultural heritage contexts (Carroll et al. 2020).
 
 In projects dealing with Ottoman Turkish manuscripts, these principles operate less as abstract ethical frameworks than as concrete criteria shaping tool selection, data workflows, and dissemination strategies. Accordingly, tools must be evaluated not only in terms of recognition accuracy, but also with respect to whether they enable sustainable access, reuse, and circulation of HTR data within the scholarly community.
 
 In this study, the selection of the Transkribus platform is directly related to its ability to meet these criteria in a particularly functional and sustainable manner. Transkribus shifts the process of model training away from a closed domain of technical expertise by enabling users to develop custom HTR models based on their own ground truth data, to make these models publicly accessible, and to allow other researchers to further refine them through fine-tuning.
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 The hybrid architecture offered by the platform enables anonymized transcription data uploaded by users to be processed on centralized servers, while simultaneously allowing individual researchers to retain control over their own datasets. This balance renders Transkribus a viable option for fields such as Ottoman Turkish studies, where both philological sensitivity and data privacy are critical concerns. The methodological framework proposed by Romein et al. (2025) for the Transkribus community further demonstrates how model sharing, data management, and community-driven reuse can be sustained within this platform.
 
@@ -112,7 +146,15 @@ Experiments conducted with the printed-text model showed that learning curves pr
 
 At the end of the initial training phase, it became evident that while the model achieved high accuracy on data produced by a single scribe, its performance declined noticeably when applied to a different copy of the same work or to manuscripts written by other hands. This pattern indicates that the model had begun to internalize scribal idiosyncrasies rather than the more general characteristics of the writing system. In response to this finding, the dataset was deliberately expanded to include multiple copies of the same work produced by different scribes. This expansion allowed the model to learn variation not only at the level of individual lines but also at the level of manuscript production practices. Within this framework, the dataset was conceived not as the transcription of a single text but as a multi-layered data pool designed to represent the paleographic and variational diversity of the Ottoman manuscript tradition, ensuring that the model would develop a generalizable learning capacity rather than a narrowly scribe-specific behavior.
 
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
+
 This methodological choice is consistent with recent findings in the literature. Reshef and Gutschow (2024) demonstrate that in writing systems characterized by contextual and formal variability, multi-source datasets lead to statistically significant improvements in model robustness. In the case of Ottoman Turkish —an underrepresented writing system marked by extensive ligature use, context-dependent letterforms, inconsistent dotting practices, and a hybrid Arabic–Persian lexicon— multi-scribal dataset design is not merely a practical enhancement, but a methodological necessity for sustainable HTR performance.
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
 
 The size of the initial training dataset was informed by existing methodological benchmarks while remaining sensitive to the specific challenges posed by Ottoman Turkish. Previous work on Transkribus-based HTR workflows suggests that approximately 10,000 words may suffice to train an individual HTR model under controlled conditions, particularly for scripts with relatively stable graphic conventions (Hodel 2020; Romein 2025). However, this threshold should be understood as a minimum viable scale rather than an optimal standard. Given the paleographic heterogeneity and linguistic complexity of Ottoman Turkish manuscripts, the present study deliberately exceeded this baseline.
 
@@ -341,3 +383,8 @@ Beyond technical performance metrics, the study highlights that HTR for Ottoman 
 From a methodological perspective, the study outlines a scalable roadmap for future Ottoman HTR research: the development of scribe-based sub-model families, period- and genre-specific datasets, and post-HTR validation layers potentially supported by large language models (LLMs). The integration of named entity recognition and linked open data infrastructures would further transform HTR outputs into semantically enriched, computable research data.
 
 In this sense, the contribution of this study extends beyond a single model implementation. It demonstrates that Ottoman Turkish HTR is not only technically feasible but also constitutes a sustainable and expandable research domain. By aligning machine learning practices with the historical, philological, and material complexity of Ottoman manuscript culture, the study provides a methodological foundation for future work at the intersection of digital humanities, paleography, and computational text analysis.
+
+
+<!-- #region citation-manager={"citations": {"": []}} -->
+
+<!-- #endregion -->
