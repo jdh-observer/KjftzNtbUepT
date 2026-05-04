@@ -62,13 +62,66 @@ The study concludes that Ottoman Turkish HTR requires careful consideration of p
 
 Over the past two decades, the digital transformation of manuscript studies has not only democratized scholarly access to collections but also significantly reduced the physical wear of original materials. However, this process —often described as the “first wave of digitization”—has largely focused on the preservation and dissemination of manuscript images. Today, with the rise of Digital Humanities and Computational Archival Science, a second wave of digitization is emerging, one that prioritizes data mining, automated recognition, and advanced analytical processing capacities.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FLDMCDXPC": [{
+    "id": "7C13846739/2FLDMCDXPC",
+    "type": "article-journal",
+    "citation-key": "zotero-item-132",
+    "container-title": "Digital Humanities Quarterly",
+    "issue": "2",
+    "title": "Automated Transcription of Historical Periodicals with HTR: Challenges and Futures",
+    "volume": "16",
+    "author": [
+        {
+            "family": "Kirmizialtin",
+            "given": "Suphan"
+        },
+        {
+            "family": "Wrisley",
+            "given": "David Joseph"
+        }
+    ],
+    "issued": {
+        "date-parts": [
+            [
+                2022
+            ]
+        ]
+    },
+    "date": "2022-06-30T21:00:00.000Z"
+}
+]}} -->
 In this context, the digital transformation of Ottoman Turkish is not merely a technical step to facilitate access to historical texts it establishes an interdisciplinary research ecosystem where traditional disciplines such as historiography, philology, and paleography converge under the framework of Digital Humanities. Ottoman Turkish exhibits profound structural complexity due to its “cursive-like” nature —where letter forms vary according to their position— as well as variable baseline alignments and non-standardized orthographic practices. These paleographic challenges, coupled with the lack of a one-to-one correspondence between the original script and the modern Latin alphabet, elevate the task beyond simple transcription into a “multi-layered visual-statistical modeling problem.” Handwritten Text Recognition (HTR) technology addresses this by analyzing text at the line level through a statistical pattern recognition approach, integrating visual form and linguistic continuity into a coherent framework that transforms Ottoman archives into “collections as data” (<cite data-cite="7C13846739/2FLDMCDXPC"></cite>).
 
 <!-- #endregion -->
 
-<!-- #region citation-manager={"citations": {"": []}} -->
-In recent years, advances in AI-based text recognition technologies have made it possible to incorporate manuscript materials into machine learning workflows. In particular, the Transkribus platform offers a functional research environment for historians and scholars in the humanities by enabling the training of custom models on user-provided data without requiring programming expertise (Aladağ and Derin, 2023).
+<!-- #region citation-manager={"citations": {"7C13846739/2F2YHPXY4K": [{
+    "id": "7C13846739/2F2YHPXY4K",
+    "type": "paper-conference",
+    "citation-key": "zotero-item-130",
+    "container-title": "Dijital Beşeri Bilimler ve Osmanlı Çalışmaları",
+    "publisher": "Vakıfbank Yayınları",
+    "publisher-place": "İstanbul",
+    "title": "Text Recognition and Automatic Transcription for Ottoman Turkish from Programming to Artificial Intelligence",
+    "author": [
+        {
+            "family": "Aladağ",
+            "given": "Fatma"
+        },
+        {
+            "family": "Derin",
+            "given": "Elif"
+        }
+    ],
+    "issued": {
+        "date-parts": [
+            [
+                2023
+            ]
+        ]
+    },
+    "date": "2023-06-30T21:00:00.000Z"
+}]}} -->
+In recent years, advances in AI-based text recognition technologies have made it possible to incorporate manuscript materials into machine learning workflows. In particular, the Transkribus platform offers a functional research environment for historians and scholars in the humanities by enabling the training of custom models on user-provided data without requiring programming expertise(<cite data-cite="7C13846739/2F2YHPXY4K"></cite>).
 
 <!-- #endregion -->
 
@@ -82,25 +135,460 @@ During the training process, not only text lines but also structural elements su
 
 ## HTR Technologies in Historical Documents: Developments and Research Implications
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FW4SHEH36": [{
+    "id": "7C13846739/2FW4SHEH36",
+    "type": "book",
+    "abstract": "Abstracts zur 7. Tagung des Verbands Digital Humanities im deutschsprachigen Raum e.V. in Paderborn Herausgeber: Christof Schöch Redaktion und Korrektur der Auszeichnungen: Nina Seemann, Benjamin Bellgrau Konvertierung TEI nach PDF: Nina Seemann https://github.com/NinaSeemann/DHd2020-BoA Historie der Autorinnen und Autoren sowie Versionen der Konversionsskripte: Attila Klett (2019) https://github.com/texttechnologylab/DHd2019BoA Claes Neuefeind (2018) https://github.com/GVogeler/DHd2018 Aramís Concepción Durán (2016) https://github.com/aramiscd/dhd2016-boa.git Karin Dalziel (2013) https://github.com/karindalziel/TEI-to-PDF Konferenz-Logo: Benjamin Bellgrau",
+    "citation-key": "schoechDHd2020Spielraeume2020a",
+    "DOI": "10.5281/ZENODO.3666689",
+    "language": "de",
+    "license": "Creative Commons Attribution 4.0 International, Open Access",
+    "publisher": "Zenodo",
+    "shortTitle": "DHd 2020 Spielräume",
+    "source": "DOI.org (Datacite)",
+    "title": "DHd 2020 Spielräume: Digital Humanities zwischen Modellierung und Interpretation. Konferenzabstracts",
+    "title-short": "DHd 2020 Spielräume",
+    "URL": "https://zenodo.org/record/3666689",
+    "author": [
+        {
+            "family": "Schöch",
+            "given": "Christof"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                21
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2020,
+                2,
+                20
+            ]
+        ]
+    },
+    "date": "2020-03-19T21:00:00.000Z"
+}
+]}} -->
+Deep learning–based Handwritten Text Recognition (HTR) systems have brought about a major transformation in the digitisation of historical documents over the past decade. In particular, Europe-based projects have established large-scale datasets for Gothic, Kurrent, and Latin scripts, thereby defining the practical accuracy limits of HTR models and introducing a comparable evaluation standard based on the Character Error Rate (CER). Within this framework, the literature has also identified threshold values indicating when automated recognition becomes meaningful and efficient for scholarly use. Hodel characterises a CER of 12% as a critical threshold at which automated transcription becomes more economical and time-efficient than manual transcription (<cite data-cite="7C13846739/2FW4SHEH36"></cite>). 
 
 <!-- #endregion -->
 
-Deep learning–based Handwritten Text Recognition (HTR) systems have brought about a major transformation in the digitisation of historical documents over the past decade. In particular, Europe-based projects have established large-scale datasets for Gothic, Kurrent, and Latin scripts, thereby defining the practical accuracy limits of HTR models and introducing a comparable evaluation standard based on the Character Error Rate (CER). Within this framework, the literature has also identified threshold values indicating when automated recognition becomes meaningful and efficient for scholarly use. Hodel characterises a CER of 12% as a critical threshold at which automated transcription becomes more economical and time-efficient than manual transcription (2020). Similarly, the Transkribus platform considers CER values of 10% or below to represent efficient and practically usable results for automated transcription. Against these benchmarks, the general model developed by Hodel et al. (2021) for German Kurrent, achieving a CER in the range of 2–5%, demonstrates an exceptionally high level of accuracy for historical material.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FDV8SRZ7H": [{
+    "id": "7C13846739/2FDV8SRZ7H",
+    "type": "article-journal",
+    "citation-key": "hodelGeneralModelsHandwritten2021",
+    "container-title": "Journal of Open Humanities Data",
+    "DOI": "10.5334/johd.46",
+    "ISSN": "2059-481X",
+    "language": "en",
+    "page": "13",
+    "shortTitle": "General Models for Handwritten Text Recognition",
+    "source": "DOI.org (Crossref)",
+    "title": "General Models for Handwritten Text Recognition: Feasibility and State-of-the Art. German Kurrent as an Example",
+    "title-short": "General Models for Handwritten Text Recognition",
+    "URL": "http://openhumanitiesdata.metajnl.com/articles/10.5334/johd.46/",
+    "volume": "7",
+    "author": [
+        {
+            "family": "Hodel",
+            "given": "Tobias"
+        },
+        {
+            "family": "Schoch",
+            "given": "David"
+        },
+        {
+            "family": "Schneider",
+            "given": "Christa"
+        },
+        {
+            "family": "Purcell",
+            "given": "Jake"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2021,
+                7,
+                9
+            ]
+        ]
+    },
+    "date": "2021-08-08T21:00:00.000Z"
+}]}} -->
+Similarly, the Transkribus platform considers CER values of 10% or below to represent efficient and practically usable results for automated transcription. Against these benchmarks, the general model developed by Hodel (<cite data-cite="7C13846739/2FDV8SRZ7H"></cite>) for German Kurrent, achieving a CER in the range of 2–5%, demonstrates an exceptionally high level of accuracy for historical material .
 
 <!-- #endregion -->
 
-The primary environment in which these accuracy thresholds and evaluation criteria have been translated into research practice has been the Transkribus platform. Mühlberger et al. (2019) describe Transkribus as a turning point in archival research, emphasizing that the ability for users to generate their own datasets and develop customised models has transformed historical manuscript recognition into a practical research tool. However, the majority of these models have been developed for Latin-based writing systems; consequently, the platform's technical infrastructure was adapted to Arabic-script writing systems at a relatively late stage (Nockels et al., 2022).
+
+<!-- #region citation-manager={"citations": {"7C13846739/2F5YTILZ66": [{
+    "id": "7C13846739/2F5YTILZ66",
+    "type": "article-journal",
+    "abstract": "Purpose\n              \n                An overview of the current use of handwritten text recognition (HTR) on archival manuscript material, as provided by the EU H2020 funded\n                Transkribus\n                platform. It explains HTR, demonstrates\n                Transkribus\n                , gives examples of use cases, highlights the affect HTR may have on scholarship, and evidences this turning point of the advanced use of digitised heritage content. The paper aims to discuss these issues.\n              \n            \n            \n              Design/methodology/approach\n              This paper adopts a case study approach, using the development and delivery of the one openly available HTR platform for manuscript material.\n            \n            \n              Findings\n              \n                Transkribus\n                has demonstrated that HTR is now a useable technology that can be employed in conjunction with mass digitisation to generate accurate transcripts of archival material. Use cases are demonstrated, and a cooperative model is suggested as a way to ensure sustainability and scaling of the platform. However, funding and resourcing issues are identified.\n              \n            \n            \n              Research limitations/implications\n              The paper presents results from projects: further user studies could be undertaken involving interviews, surveys, etc.\n            \n            \n              Practical implications\n              \n                Only HTR provided via\n                Transkribus\n                is covered: however, this is the only publicly available platform for HTR on individual collections of historical documents at time of writing and it represents the current state-of-the-art in this field.\n              \n            \n            \n              Social implications\n              The increased access to information contained within historical texts has the potential to be transformational for both institutions and individuals.\n            \n            \n              Originality/value\n              This is the first published overview of how HTR is used by a wide archival studies community, reporting and showcasing current application of handwriting technology in the cultural heritage sector.",
+    "citation-key": "muehlbergerTransformingScholarshipArchives2019",
+    "container-title": "Journal of Documentation",
+    "DOI": "10.1108/JD-07-2018-0114",
+    "ISSN": "0022-0418",
+    "issue": "5",
+    "journalAbbreviation": "JD",
+    "language": "en",
+    "license": "https://www.emerald.com/insight/site-policies",
+    "page": "954-976",
+    "shortTitle": "Transforming scholarship in the archives through handwritten text recognition",
+    "source": "DOI.org (Crossref)",
+    "title": "Transforming scholarship in the archives through handwritten text recognition: Transkribus as a case study",
+    "title-short": "Transforming scholarship in the archives through handwritten text recognition",
+    "URL": "http://www.emerald.com/jd/article/75/5/954-976/206914",
+    "volume": "75",
+    "author": [
+        {
+            "family": "Muehlberger",
+            "given": "Guenter"
+        },
+        {
+            "family": "Seaward",
+            "given": "Louise"
+        },
+        {
+            "family": "Terras",
+            "given": "Melissa"
+        },
+        {
+            "family": "Ares Oliveira",
+            "given": "Sofia"
+        },
+        {
+            "family": "Bosch",
+            "given": "Vicente"
+        },
+        {
+            "family": "Bryan",
+            "given": "Maximilian"
+        },
+        {
+            "family": "Colutto",
+            "given": "Sebastian"
+        },
+        {
+            "family": "Déjean",
+            "given": "Hervé"
+        },
+        {
+            "family": "Diem",
+            "given": "Markus"
+        },
+        {
+            "family": "Fiel",
+            "given": "Stefan"
+        },
+        {
+            "family": "Gatos",
+            "given": "Basilis"
+        },
+        {
+            "family": "Greinoecker",
+            "given": "Albert"
+        },
+        {
+            "family": "Grüning",
+            "given": "Tobias"
+        },
+        {
+            "family": "Hackl",
+            "given": "Guenter"
+        },
+        {
+            "family": "Haukkovaara",
+            "given": "Vili"
+        },
+        {
+            "family": "Heyer",
+            "given": "Gerhard"
+        },
+        {
+            "family": "Hirvonen",
+            "given": "Lauri"
+        },
+        {
+            "family": "Hodel",
+            "given": "Tobias"
+        },
+        {
+            "family": "Jokinen",
+            "given": "Matti"
+        },
+        {
+            "family": "Kahle",
+            "given": "Philip"
+        },
+        {
+            "family": "Kallio",
+            "given": "Mario"
+        },
+        {
+            "family": "Kaplan",
+            "given": "Frederic"
+        },
+        {
+            "family": "Kleber",
+            "given": "Florian"
+        },
+        {
+            "family": "Labahn",
+            "given": "Roger"
+        },
+        {
+            "family": "Lang",
+            "given": "Eva Maria"
+        },
+        {
+            "family": "Laube",
+            "given": "Sören"
+        },
+        {
+            "family": "Leifert",
+            "given": "Gundram"
+        },
+        {
+            "family": "Louloudis",
+            "given": "Georgios"
+        },
+        {
+            "family": "McNicholl",
+            "given": "Rory"
+        },
+        {
+            "family": "Meunier",
+            "given": "Jean-Luc"
+        },
+        {
+            "family": "Michael",
+            "given": "Johannes"
+        },
+        {
+            "family": "Mühlbauer",
+            "given": "Elena"
+        },
+        {
+            "family": "Philipp",
+            "given": "Nathanael"
+        },
+        {
+            "family": "Pratikakis",
+            "given": "Ioannis"
+        },
+        {
+            "family": "Puigcerver Pérez",
+            "given": "Joan"
+        },
+        {
+            "family": "Putz",
+            "given": "Hannelore"
+        },
+        {
+            "family": "Retsinas",
+            "given": "George"
+        },
+        {
+            "family": "Romero",
+            "given": "Verónica"
+        },
+        {
+            "family": "Sablatnig",
+            "given": "Robert"
+        },
+        {
+            "family": "Sánchez",
+            "given": "Joan Andreu"
+        },
+        {
+            "family": "Schofield",
+            "given": "Philip"
+        },
+        {
+            "family": "Sfikas",
+            "given": "Giorgos"
+        },
+        {
+            "family": "Sieber",
+            "given": "Christian"
+        },
+        {
+            "family": "Stamatopoulos",
+            "given": "Nikolaos"
+        },
+        {
+            "family": "Strauß",
+            "given": "Tobias"
+        },
+        {
+            "family": "Terbul",
+            "given": "Tamara"
+        },
+        {
+            "family": "Toselli",
+            "given": "Alejandro Héctor"
+        },
+        {
+            "family": "Ulreich",
+            "given": "Berthold"
+        },
+        {
+            "family": "Villegas",
+            "given": "Mauricio"
+        },
+        {
+            "family": "Vidal",
+            "given": "Enrique"
+        },
+        {
+            "family": "Walcher",
+            "given": "Johanna"
+        },
+        {
+            "family": "Weidemann",
+            "given": "Max"
+        },
+        {
+            "family": "Wurster",
+            "given": "Herbert"
+        },
+        {
+            "family": "Zagoris",
+            "given": "Konstantinos"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2019,
+                9,
+                9
+            ]
+        ]
+    },
+    "date": "2019-10-08T21:00:00.000Z"
+}]}} -->
+The primary environment in which these accuracy thresholds and evaluation criteria have been translated into research practice has been the Transkribus platform. Mühlberger et al. (<cite data-cite="7C13846739/2F5YTILZ66"></cite>) describe Transkribus as a turning point in archival research, emphasizing that the ability for users to generate their own datasets and develop customised models has transformed historical manuscript recognition into a practical research tool.
+
+<!-- #endregion -->
+
+<!-- #region citation-manager={"citations": {"7C13846739/2FFJBA3R37": [{
+    "id": "7C13846739/2FFJBA3R37",
+    "type": "article-journal",
+    "abstract": "Abstract\n            \n              Handwritten Text Recognition (HTR) technology is now a mature machine learning tool, becoming integrated in the digitisation processes of libraries and archives, speeding up the transcription of primary sources and facilitating full text searching and analysis of historic texts at scale. However, research into how HTR is changing our information environment is scant. This paper presents a systematic literature review regarding how researchers are using one particular HTR platform, Transkribus, to indicate the domains where HTR is applied, the approach taken, and how the technology is understood. 381 papers from 2015 to 2020 were gathered from Google Scholar, Scopus, and Web of Science, then grouped and coded into categories using quantitative and qualitative approaches. Published research that mentions Transkribus is international and rapidly growing. Transkribus features primarily in archival and library science publications, while a long tail of broad and eclectic disciplines, including history, computer science, citizen science, law and education, demonstrate the wider applicability of the tool. The most common paper categories were\n              humanities applications\n              (67%),\n              technological (25%), users\n              (5%) and\n              tutorials (3%)\n              . This paper presents the first overarching review of HTR as featured in published research, while also elucidating how HTR is affecting the information environment.",
+    "citation-key": "nockelsUnderstandingApplicationHandwritten2022",
+    "container-title": "Archival Science",
+    "DOI": "10.1007/s10502-022-09397-0",
+    "ISSN": "1389-0166, 1573-7500",
+    "issue": "3",
+    "journalAbbreviation": "Arch Sci",
+    "language": "en",
+    "page": "367-392",
+    "shortTitle": "Understanding the application of handwritten text recognition technology in heritage contexts",
+    "source": "DOI.org (Crossref)",
+    "title": "Understanding the application of handwritten text recognition technology in heritage contexts: a systematic review of Transkribus in published research",
+    "title-short": "Understanding the application of handwritten text recognition technology in heritage contexts",
+    "URL": "https://link.springer.com/10.1007/s10502-022-09397-0",
+    "volume": "22",
+    "author": [
+        {
+            "family": "Nockels",
+            "given": "Joe"
+        },
+        {
+            "family": "Gooding",
+            "given": "Paul"
+        },
+        {
+            "family": "Ames",
+            "given": "Sarah"
+        },
+        {
+            "family": "Terras",
+            "given": "Melissa"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                "2022"
+            ]
+        ]
+    },
+    "date": "2022-06-30T21:00:00.000Z"
+}]}} -->
+However, the majority of these models have been developed for Latin-based writing systems; consequently, the platform's technical infrastructure was adapted to Arabic-script writing systems at a relatively late stage (<cite data-cite="7C13846739/2FFJBA3R37"></cite>).
+
+<!-- #endregion -->
 
 The challenges encountered in developing HTR models for Arabic-script manuscripts stem not so much from the general structural characteristics of the writing system itself, but rather from how these characteristics are reflected in automated recognition processes. In Ottoman Turkish manuscripts, letterform variation depending on position within the word, the absent or irregular use of diacritics or dots, fluctuations in baseline alignment, and divergent scribal practices all contribute to cumulative errors, particularly at the stages of line segmentation and character-level alignment. Consequently, models developed for Ottoman Turkish must be trained not merely to recognize Arabic-script writing in general, but to learn visual patterns specific to a particular script type and manuscript practice.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2F7L5L3P36": [{
+    "id": "7C13846739/2F7L5L3P36",
+    "type": "book",
+    "abstract": "\"The Bloomsbury Handbook to the Digital Humanities reconsiders key debates, methods, possibilities, and failings from across the digital humanities, offering a timely interrogation of the present and future of the arts and humanities in the digital age. Comprising 43 essays from some of the field's leading scholars and practitioners, this comprehensive collection examines, among its many subjects, the emergence and ongoing development of DH, postcolonial digital humanities, feminist digital humanities, race and DH, multilingual digital humanities, media studies as DH, the failings of DH, critical digital humanities, the future of text encoding, cultural analytics, natural language processing, open access and digital publishing, digital cultural heritage, archiving and editing, sustainability, DH pedagogy, labour, artificial intelligence, the cultural economy, and the role of the digital humanities in climate change. The Bloomsbury Handbook to the Digital Humanities: Surveys key contemporary debates within DH, focusing on pressing issues of perspective, methodology, access, capacity, and sustainability. Reconsiders and reimagines the past, present, and future of the digital humanities. Features an intuitive structure which divides topics across five sections: \"Perspectives & Polemics\", \"Methods, Tools & Techniques\", \"Public Digital Humanities\", \"Institutional Contexts\", and \"DH Futures\". Comprehensive in scope and accessibility written, this book is essential reading for students, scholars, and practitioners working across the digital humanities and wider arts and humanities. Featuring contributions from pre-eminent scholars and radical thinkers both established and emerging, The Bloomsbury Handbook to the Digital Humanities should long serve as a roadmap through the myriad formulations, methodologies, opportunities, and limitations of DH. Comprehensive in its scope, pithy in style yet forensic in its scholarship, this book is essential reading for students, scholars, and practitioners working across the digital humanities, whatever DH might be, and whatever DH might become\"--",
+    "citation-key": "osullivanBloomsburyHandbookDigital2022",
+    "collection-title": "Bloomsbury Handbooks",
+    "ISBN": "978-1-350-23211-2 978-1-350-23210-5",
+    "publisher": "Bloomsbury Academic",
+    "publisher-place": "New York",
+    "source": "Library of Congress ISBN",
+    "title": "The Bloomsbury Handbook to the Digital Humanities",
+    "editor": [
+        {
+            "family": "O'Sullivan",
+            "given": "James"
+        }
+    ],
+    "issued": {
+        "date-parts": [
+            [
+                2022
+            ]
+        ]
+    },
+    "date": "2022-06-30T21:00:00.000Z"
+}]}} -->
+This requirement also intersects with a broader structural issue identified by Nilsson-Fernàndez and Dombrowski (<cite data-cite="7C13846739/2F7L5L3P36"></cite>) in the context of multilingual digital humanities. As the authors argue, Latin-centered digital infrastructures and text-processing tools are built upon a limited set of assumptions that do not readily accommodate right-to-left (RTL) and context-sensitive writing systems. The challenges encountered during model training for Ottoman Turkish manuscripts within the Transkribus environment can therefore be understood as a practical manifestation of this structural mismatch. Within the technical framework provided by the platform, the deliberate selection of training data, annotation strategies, and modeling decisions tailored to Ottoman Turkish thus becomes a methodological necessity rather than a purely technical preference.
 
 <!-- #endregion -->
-
-This requirement also intersects with a broader structural issue identified by Nilsson-Fernàndez and Dombrowski (2022) in the context of multilingual digital humanities. As the authors argue, Latin-centered digital infrastructures and text-processing tools are built upon a limited set of assumptions that do not readily accommodate right-to-left (RTL) and context-sensitive writing systems. The challenges encountered during model training for Ottoman Turkish manuscripts within the Transkribus environment can therefore be understood as a practical manifestation of this structural mismatch. Within the technical framework provided by the platform, the deliberate selection of training data, annotation strategies, and modeling decisions tailored to Ottoman Turkish thus becomes a methodological necessity rather than a purely technical preference.
 
 Beyond the challenges shared by RTL languages more generally, Ottoman Turkish introduces an additional layer of complexity in HTR workflows. While HTR models for Arabic-script languages typically operate within a single writing system, Ottoman Turkish studies often involve a two-layered process: the visual recognition of the Arabic-script text, followed by its transfer into a Latin-based writing system. This dual transformation renders Ottoman Turkish distinctive not only in paleographic terms but also with respect to its output format when compared to other Arabic-script languages.
 
@@ -110,25 +598,512 @@ Ottoman Turkish constitutes a hybrid linguistic structure characterized by vocab
 
 ## Rationale for Tool Selection
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FPDX39T8Q": [{
+    "id": "7C13846739/2FPDX39T8Q",
+    "type": "article-journal",
+    "abstract": "Abstract\n            There is an urgent need to improve the infrastructure supporting the reuse of scholarly data. A diverse set of stakeholders—representing academia, industry, funding agencies, and scholarly publishers—have come together to design and jointly endorse a concise and measureable set of principles that we refer to as the FAIR Data Principles. The intent is that these may act as a guideline for those wishing to enhance the reusability of their data holdings. Distinct from peer initiatives that focus on the human scholar, the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals. This Comment is the first formal publication of the FAIR Principles, and includes the rationale behind them, and some exemplar implementations in the community.",
+    "citation-key": "wilkinsonFAIRGuidingPrinciples2016",
+    "container-title": "Scientific Data",
+    "DOI": "10.1038/sdata.2016.18",
+    "ISSN": "2052-4463",
+    "issue": "1",
+    "journalAbbreviation": "Sci Data",
+    "language": "en",
+    "page": "160018",
+    "source": "DOI.org (Crossref)",
+    "title": "The FAIR Guiding Principles for scientific data management and stewardship",
+    "URL": "https://www.nature.com/articles/sdata201618",
+    "volume": "3",
+    "author": [
+        {
+            "family": "Wilkinson",
+            "given": "Mark D."
+        },
+        {
+            "family": "Dumontier",
+            "given": "Michel"
+        },
+        {
+            "family": "Aalbersberg",
+            "given": "IJsbrand Jan"
+        },
+        {
+            "family": "Appleton",
+            "given": "Gabrielle"
+        },
+        {
+            "family": "Axton",
+            "given": "Myles"
+        },
+        {
+            "family": "Baak",
+            "given": "Arie"
+        },
+        {
+            "family": "Blomberg",
+            "given": "Niklas"
+        },
+        {
+            "family": "Boiten",
+            "given": "Jan-Willem"
+        },
+        {
+            "family": "Da Silva Santos",
+            "given": "Luiz Bonino"
+        },
+        {
+            "family": "Bourne",
+            "given": "Philip E."
+        },
+        {
+            "family": "Bouwman",
+            "given": "Jildau"
+        },
+        {
+            "family": "Brookes",
+            "given": "Anthony J."
+        },
+        {
+            "family": "Clark",
+            "given": "Tim"
+        },
+        {
+            "family": "Crosas",
+            "given": "Mercè"
+        },
+        {
+            "family": "Dillo",
+            "given": "Ingrid"
+        },
+        {
+            "family": "Dumon",
+            "given": "Olivier"
+        },
+        {
+            "family": "Edmunds",
+            "given": "Scott"
+        },
+        {
+            "family": "Evelo",
+            "given": "Chris T."
+        },
+        {
+            "family": "Finkers",
+            "given": "Richard"
+        },
+        {
+            "family": "Gonzalez-Beltran",
+            "given": "Alejandra"
+        },
+        {
+            "family": "Gray",
+            "given": "Alasdair J.G."
+        },
+        {
+            "family": "Groth",
+            "given": "Paul"
+        },
+        {
+            "family": "Goble",
+            "given": "Carole"
+        },
+        {
+            "family": "Grethe",
+            "given": "Jeffrey S."
+        },
+        {
+            "family": "Heringa",
+            "given": "Jaap"
+        },
+        {
+            "family": "’T Hoen",
+            "given": "Peter A.C"
+        },
+        {
+            "family": "Hooft",
+            "given": "Rob"
+        },
+        {
+            "family": "Kuhn",
+            "given": "Tobias"
+        },
+        {
+            "family": "Kok",
+            "given": "Ruben"
+        },
+        {
+            "family": "Kok",
+            "given": "Joost"
+        },
+        {
+            "family": "Lusher",
+            "given": "Scott J."
+        },
+        {
+            "family": "Martone",
+            "given": "Maryann E."
+        },
+        {
+            "family": "Mons",
+            "given": "Albert"
+        },
+        {
+            "family": "Packer",
+            "given": "Abel L."
+        },
+        {
+            "family": "Persson",
+            "given": "Bengt"
+        },
+        {
+            "family": "Rocca-Serra",
+            "given": "Philippe"
+        },
+        {
+            "family": "Roos",
+            "given": "Marco"
+        },
+        {
+            "family": "Van Schaik",
+            "given": "Rene"
+        },
+        {
+            "family": "Sansone",
+            "given": "Susanna-Assunta"
+        },
+        {
+            "family": "Schultes",
+            "given": "Erik"
+        },
+        {
+            "family": "Sengstag",
+            "given": "Thierry"
+        },
+        {
+            "family": "Slater",
+            "given": "Ted"
+        },
+        {
+            "family": "Strawn",
+            "given": "George"
+        },
+        {
+            "family": "Swertz",
+            "given": "Morris A."
+        },
+        {
+            "family": "Thompson",
+            "given": "Mark"
+        },
+        {
+            "family": "Van Der Lei",
+            "given": "Johan"
+        },
+        {
+            "family": "Van Mulligen",
+            "given": "Erik"
+        },
+        {
+            "family": "Velterop",
+            "given": "Jan"
+        },
+        {
+            "family": "Waagmeester",
+            "given": "Andra"
+        },
+        {
+            "family": "Wittenburg",
+            "given": "Peter"
+        },
+        {
+            "family": "Wolstencroft",
+            "given": "Katherine"
+        },
+        {
+            "family": "Zhao",
+            "given": "Jun"
+        },
+        {
+            "family": "Mons",
+            "given": "Barend"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2016,
+                3,
+                15
+            ]
+        ]
+    },
+    "date": "2016-04-14T21:00:00.000Z"
+}]}} -->
+In HTR projects, data management constitutes a methodological stage as decisive as model training itself. The FAIR principles (Findable, Accessible, Interoperable, Reusable) emphasize long-term reusability and structural transparency of research data (<cite data-cite="7C13846739/2FPDX39T8Q"></cite>),
 
 <!-- #endregion -->
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FQKCTZ6VD": [{
+    "id": "7C13846739/2FQKCTZ6VD",
+    "type": "article-journal",
+    "citation-key": "carrollCAREPrinciplesIndigenous2020",
+    "container-title": "Data Science Journal",
+    "DOI": "10.5334/dsj-2020-043",
+    "ISSN": "1683-1470",
+    "language": "en",
+    "license": "http://creativecommons.org/licenses/by/4.0",
+    "page": "43",
+    "source": "DOI.org (Crossref)",
+    "title": "The CARE Principles for Indigenous Data Governance",
+    "URL": "http://datascience.codata.org/articles/10.5334/dsj-2020-043/",
+    "volume": "19",
+    "author": [
+        {
+            "family": "Carroll",
+            "given": "Stephanie Russo"
+        },
+        {
+            "family": "Garba",
+            "given": "Ibrahim"
+        },
+        {
+            "family": "Figueroa-Rodríguez",
+            "given": "Oscar L."
+        },
+        {
+            "family": "Holbrook",
+            "given": "Jarita"
+        },
+        {
+            "family": "Lovett",
+            "given": "Raymond"
+        },
+        {
+            "family": "Materechera",
+            "given": "Simeon"
+        },
+        {
+            "family": "Parsons",
+            "given": "Mark"
+        },
+        {
+            "family": "Raseroka",
+            "given": "Kay"
+        },
+        {
+            "family": "Rodriguez-Lonebear",
+            "given": "Desi"
+        },
+        {
+            "family": "Rowe",
+            "given": "Robyn"
+        },
+        {
+            "family": "Sara",
+            "given": "Rodrigo"
+        },
+        {
+            "family": "Walker",
+            "given": "Jennifer D."
+        },
+        {
+            "family": "Anderson",
+            "given": "Jane"
+        },
+        {
+            "family": "Hudson",
+            "given": "Maui"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2020,
+                11,
+                4
+            ]
+        ]
+    },
+    "date": "2020-12-03T21:00:00.000Z"
+}]}} -->
+while the CARE principles foreground issues of data ownership, representational responsibility, and community-oriented access 
+in cultural heritage contexts (<cite data-cite="7C13846739/2FQKCTZ6VD"></cite>).
 
 <!-- #endregion -->
 
-In HTR projects, data management constitutes a methodological stage as decisive as model training itself. The FAIR principles (Findable, Accessible, Interoperable, Reusable) emphasize long-term reusability and structural transparency of research data (Wilkinson et al. 2016), while the CARE principles foreground issues of data ownership, representational responsibility, and community-oriented access in cultural heritage contexts (Carroll et al. 2020).
 
 In projects dealing with Ottoman Turkish manuscripts, these principles operate less as abstract ethical frameworks than as concrete criteria shaping tool selection, data workflows, and dissemination strategies. Accordingly, tools must be evaluated not only in terms of recognition accuracy, but also with respect to whether they enable sustainable access, reuse, and circulation of HTR data within the scholarly community.
 
 In this study, the selection of the Transkribus platform is directly related to its ability to meet these criteria in a particularly functional and sustainable manner. Transkribus shifts the process of model training away from a closed domain of technical expertise by enabling users to develop custom HTR models based on their own ground truth data, to make these models publicly accessible, and to allow other researchers to further refine them through fine-tuning.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FRBAR8ING": [{
+    "id": "7C13846739/2FRBAR8ING",
+    "type": "article-journal",
+    "abstract": "Abstract\n            Transitioning from research proposal to project management in Automatic Text Recognition (ATR) for cultural heritage text collections demands meticulous planning, realistic budgeting, and efficient team coordination. Insights from the Transkribus User Conference 2024 offer a roadmap for success, emphasising clear objectives, ethical considerations, and practical outcomes. Effective budgeting should include digitization, software, staffing, and long-term storage, while a comprehensive Data Management Plan (DMP) ensures efficient data handling. Key project management tasks include team formation, workflow documentation, and document layout optimization. High-quality training and validation data in ATR require clear guidelines, iterative testing, and agreed licensing. Crowdsourcing can enhance ATR projects, and sharing models and datasets through platforms like Transkribus Sites promotes collaboration and visibility.",
+    "citation-key": "romeinResearchProposalProject2025",
+    "container-title": "International Journal of Digital Humanities",
+    "DOI": "10.1007/s42803-025-00107-7",
+    "ISSN": "2524-7840",
+    "issue": "2",
+    "journalAbbreviation": "Int J Digit Humanities",
+    "language": "en",
+    "page": "303-332",
+    "source": "DOI.org (Crossref)",
+    "title": "From research proposal to project management. A guide from the Transkribus community on planning and executing workflows for researchers and GLAM-professionals",
+    "URL": "https://link.springer.com/10.1007/s42803-025-00107-7",
+    "volume": "7",
+    "author": [
+        {
+            "family": "Romein",
+            "given": "C. Annemieke"
+        },
+        {
+            "family": "Kırmızıaltın",
+            "given": "Süphan"
+        },
+        {
+            "family": "Reshef",
+            "given": "Ronny"
+        },
+        {
+            "family": "Schneider",
+            "given": "Christa"
+        },
+        {
+            "family": "Agostini",
+            "given": "Giorgia"
+        },
+        {
+            "family": "Charlton",
+            "given": "Ash"
+        },
+        {
+            "family": "Terras",
+            "given": "Melissa"
+        },
+        {
+            "family": "Nockels",
+            "given": "Joseph"
+        },
+        {
+            "family": "Ahn",
+            "given": "Seoyeong"
+        },
+        {
+            "family": "Aladağ",
+            "given": "Fatma"
+        },
+        {
+            "family": "Capurro",
+            "given": "Carlotta"
+        },
+        {
+            "family": "Damsma",
+            "given": "Levi"
+        },
+        {
+            "family": "De Vita",
+            "given": "Lorena"
+        },
+        {
+            "family": "Fahnenbruck",
+            "given": "Laura"
+        },
+        {
+            "family": "Gielis",
+            "given": "Gert"
+        },
+        {
+            "family": "Griffiths",
+            "given": "Rachael"
+        },
+        {
+            "family": "Keinan-Schoonbaert",
+            "given": "Adi"
+        },
+        {
+            "family": "Kuijpers",
+            "given": "Erika"
+        },
+        {
+            "family": "El Attal",
+            "given": "Mirjam"
+        },
+        {
+            "family": "Mühlberger",
+            "given": "Günter"
+        },
+        {
+            "family": "Noah Omollo",
+            "given": "Juma"
+        },
+        {
+            "family": "Rabus",
+            "given": "Achim"
+        },
+        {
+            "family": "Spina",
+            "given": "Salvatore"
+        },
+        {
+            "family": "Al Assali",
+            "given": "Nour"
+        },
+        {
+            "family": "Torres Flawiá",
+            "given": "Eugenio"
+        },
+        {
+            "family": "Wrisley",
+            "given": "David Joseph"
+        },
+        {
+            "family": "Wilbrink",
+            "given": "Heleen"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2025,
+                9,
+                1
+            ]
+        ]
+    },
+    "date": "2025-09-30T21:00:00.000Z"
+}]}} -->
+The hybrid architecture offered by the platform enables anonymized transcription data uploaded by users to be processed on centralized servers, while simultaneously allowing individual researchers to retain control over their own datasets. This balance renders Transkribus a viable option for fields such as Ottoman Turkish studies, where both philological sensitivity and data privacy are critical concerns. The methodological framework proposed by Romein et al. (<cite data-cite="7C13846739/2FRBAR8ING"></cite>) for the Transkribus community further demonstrates how model sharing, data management, and community-driven reuse can be sustained within this platform.
 
 <!-- #endregion -->
 
-The hybrid architecture offered by the platform enables anonymized transcription data uploaded by users to be processed on centralized servers, while simultaneously allowing individual researchers to retain control over their own datasets. This balance renders Transkribus a viable option for fields such as Ottoman Turkish studies, where both philological sensitivity and data privacy are critical concerns. The methodological framework proposed by Romein et al. (2025) for the Transkribus community further demonstrates how model sharing, data management, and community-driven reuse can be sustained within this platform.
 
 Another determining factor in the choice of Transkribus is the adaptability of its technical outputs to diverse research objectives. The platform is not limited to producing automatic transcriptions; it also integrates page layout analysis, structured tagging, export in standardized formats such as PAGE XML and ALTO XML, and the generation of rich metadata suitable for digital scholarly editions. This integrated functionality allows Ottoman manuscripts to be treated not merely as readable texts, but as analyzable and reusable digital objects.
 
@@ -139,26 +1114,285 @@ The publication of the trained model through the Transkribus Public Models inter
 ## Construction of the Dataset
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
-The construction of the training dataset was designed to account simultaneously for the paleographic diversity of the Ottoman Turkish manuscript tradition and the learning dynamics of HTR models. This study constitutes a direct continuation of the Printed Ottoman Turkish HTR Model developed by Kırmızıaltın, Aladağ, and Derin (2023). The high accuracy achieved by that model on printed texts —approximately 93%— demonstrated the structural compatibility of the Ottoman writing system with machine learning approaches and provided a solid methodological foundation for extending HTR research from printed material to handwritten sources. Building on this foundation, the present study represents one of the first systematic attempts to transfer Ottoman Turkish HTR from print to manuscript culture.
+<!-- #region citation-manager={"citations": {"7C13846739/2F2YHPXY4K": [{
+    "id": "7C13846739/2F2YHPXY4K",
+    "type": "paper-conference",
+    "citation-key": "zotero-item-130",
+    "container-title": "Dijital Beşeri Bilimler ve Osmanlı Çalışmaları",
+    "publisher": "Vakıfbank Yayınları",
+    "publisher-place": "İstanbul",
+    "title": "Text Recognition and Automatic Transcription for Ottoman Turkish from Programming to Artificial Intelligence",
+    "author": [
+        {
+            "family": "Aladağ",
+            "given": "Fatma"
+        },
+        {
+            "family": "Derin",
+            "given": "Elif"
+        }
+    ],
+    "issued": {
+        "date-parts": [
+            [
+                2023
+            ]
+        ]
+    },
+    "date": "2023-06-30T21:00:00.000Z"
+}]}} -->
+The construction of the training dataset was designed to account simultaneously for the paleographic diversity of the Ottoman Turkish manuscript tradition and the learning dynamics of HTR models. This study constitutes a direct continuation of the Printed Ottoman Turkish HTR Model developed by Kırmızıaltın, Aladağ, and Derin (<cite data-cite="7C13846739/2F2YHPXY4K"></cite>). The high accuracy achieved by that model on printed texts —approximately 93%— demonstrated the structural compatibility of the Ottoman writing system with machine learning approaches and provided a solid methodological foundation for extending HTR research from printed material to handwritten sources. Building on this foundation, the present study represents one of the first systematic attempts to transfer Ottoman Turkish HTR from print to manuscript culture.
 
+<!-- #endregion -->
+
+<!-- #region tags=["hermeneutics"] -->
 Experiments conducted with the printed-text model showed that learning curves progressed in a relatively stable and predictable manner, largely due to the formal consistency of letterforms. For this reason, the transition from printed texts to manuscripts required a strategic selection of script. Naskh (nesih) script was chosen as the initial focus of the dataset, as it exhibits the strongest formal parallels to printed Ottoman Turkish in terms of legibility, regularity of letterforms, and line structure. The initial dataset was therefore constructed around manuscript material written in naskh, enabling a controlled transition from typographic to handwritten variation.
 
 At the end of the initial training phase, it became evident that while the model achieved high accuracy on data produced by a single scribe, its performance declined noticeably when applied to a different copy of the same work or to manuscripts written by other hands. This pattern indicates that the model had begun to internalize scribal idiosyncrasies rather than the more general characteristics of the writing system. In response to this finding, the dataset was deliberately expanded to include multiple copies of the same work produced by different scribes. This expansion allowed the model to learn variation not only at the level of individual lines but also at the level of manuscript production practices. Within this framework, the dataset was conceived not as the transcription of a single text but as a multi-layered data pool designed to represent the paleographic and variational diversity of the Ottoman manuscript tradition, ensuring that the model would develop a generalizable learning capacity rather than a narrowly scribe-specific behavior.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FLT4Q29IG": [{
+    "id": "7C13846739/2FLT4Q29IG",
+    "type": "article-journal",
+    "citation-key": "reshefTextRecognitionModel2024",
+    "container-title": "Journal of Open Humanities Data",
+    "DOI": "10.5334/johd.194",
+    "ISSN": "2059-481X",
+    "language": "en",
+    "page": "35",
+    "source": "DOI.org (Crossref)",
+    "title": "Text Recognition Model for Yiddish in Vaybertaytsh Typeface, Based on Community Regulations",
+    "URL": "http://openhumanitiesdata.metajnl.com/articles/10.5334/johd.194/",
+    "volume": "10",
+    "author": [
+        {
+            "family": "Reshef",
+            "given": "Ronny"
+        },
+        {
+            "family": "Gutschow",
+            "given": "Mirjam"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2024,
+                5,
+                6
+            ]
+        ]
+    },
+    "date": "2024-06-05T21:00:00.000Z"
+}
+]}} -->
+This methodological choice is consistent with recent findings in the literature. Reshef and Gutschow (<cite data-cite="7C13846739/2FLT4Q29IG"></cite>) demonstrate that in writing systems characterized by contextual and formal variability, multi-source datasets lead to statistically significant improvements in model robustness. In the case of Ottoman Turkish —an underrepresented writing system marked by extensive ligature use, context-dependent letterforms, inconsistent dotting practices, and a hybrid Arabic–Persian lexicon— multi-scribal dataset design is not merely a practical enhancement, but a methodological necessity for sustainable HTR performance.
 
 <!-- #endregion -->
 
-This methodological choice is consistent with recent findings in the literature. Reshef and Gutschow (2024) demonstrate that in writing systems characterized by contextual and formal variability, multi-source datasets lead to statistically significant improvements in model robustness. In the case of Ottoman Turkish —an underrepresented writing system marked by extensive ligature use, context-dependent letterforms, inconsistent dotting practices, and a hybrid Arabic–Persian lexicon— multi-scribal dataset design is not merely a practical enhancement, but a methodological necessity for sustainable HTR performance.
 
-<!-- #region citation-manager={"citations": {"": []}} -->
+<!-- #region citation-manager={"citations": {"7C13846739/2FW4SHEH36": [{
+    "id": "7C13846739/2FW4SHEH36",
+    "type": "book",
+    "abstract": "Abstracts zur 7. Tagung des Verbands Digital Humanities im deutschsprachigen Raum e.V. in Paderborn Herausgeber: Christof Schöch Redaktion und Korrektur der Auszeichnungen: Nina Seemann, Benjamin Bellgrau Konvertierung TEI nach PDF: Nina Seemann https://github.com/NinaSeemann/DHd2020-BoA Historie der Autorinnen und Autoren sowie Versionen der Konversionsskripte: Attila Klett (2019) https://github.com/texttechnologylab/DHd2019BoA Claes Neuefeind (2018) https://github.com/GVogeler/DHd2018 Aramís Concepción Durán (2016) https://github.com/aramiscd/dhd2016-boa.git Karin Dalziel (2013) https://github.com/karindalziel/TEI-to-PDF Konferenz-Logo: Benjamin Bellgrau",
+    "citation-key": "schoechDHd2020Spielraeume2020a",
+    "DOI": "10.5281/ZENODO.3666689",
+    "language": "de",
+    "license": "Creative Commons Attribution 4.0 International, Open Access",
+    "publisher": "Zenodo",
+    "shortTitle": "DHd 2020 Spielräume",
+    "source": "DOI.org (Datacite)",
+    "title": "DHd 2020 Spielräume: Digital Humanities zwischen Modellierung und Interpretation. Konferenzabstracts",
+    "title-short": "DHd 2020 Spielräume",
+    "URL": "https://zenodo.org/record/3666689",
+    "author": [
+        {
+            "family": "Schöch",
+            "given": "Christof"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                21
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2020,
+                2,
+                20
+            ]
+        ]
+    },
+    "date": "2020-03-19T21:00:00.000Z"
+}
+],
+{"7C13846739/2FRBAR8ING": [{
+    "id": "7C13846739/2FRBAR8ING",
+    "type": "article-journal",
+    "abstract": "Abstract\n            Transitioning from research proposal to project management in Automatic Text Recognition (ATR) for cultural heritage text collections demands meticulous planning, realistic budgeting, and efficient team coordination. Insights from the Transkribus User Conference 2024 offer a roadmap for success, emphasising clear objectives, ethical considerations, and practical outcomes. Effective budgeting should include digitization, software, staffing, and long-term storage, while a comprehensive Data Management Plan (DMP) ensures efficient data handling. Key project management tasks include team formation, workflow documentation, and document layout optimization. High-quality training and validation data in ATR require clear guidelines, iterative testing, and agreed licensing. Crowdsourcing can enhance ATR projects, and sharing models and datasets through platforms like Transkribus Sites promotes collaboration and visibility.",
+    "citation-key": "romeinResearchProposalProject2025",
+    "container-title": "International Journal of Digital Humanities",
+    "DOI": "10.1007/s42803-025-00107-7",
+    "ISSN": "2524-7840",
+    "issue": "2",
+    "journalAbbreviation": "Int J Digit Humanities",
+    "language": "en",
+    "page": "303-332",
+    "source": "DOI.org (Crossref)",
+    "title": "From research proposal to project management. A guide from the Transkribus community on planning and executing workflows for researchers and GLAM-professionals",
+    "URL": "https://link.springer.com/10.1007/s42803-025-00107-7",
+    "volume": "7",
+    "author": [
+        {
+            "family": "Romein",
+            "given": "C. Annemieke"
+        },
+        {
+            "family": "Kırmızıaltın",
+            "given": "Süphan"
+        },
+        {
+            "family": "Reshef",
+            "given": "Ronny"
+        },
+        {
+            "family": "Schneider",
+            "given": "Christa"
+        },
+        {
+            "family": "Agostini",
+            "given": "Giorgia"
+        },
+        {
+            "family": "Charlton",
+            "given": "Ash"
+        },
+        {
+            "family": "Terras",
+            "given": "Melissa"
+        },
+        {
+            "family": "Nockels",
+            "given": "Joseph"
+        },
+        {
+            "family": "Ahn",
+            "given": "Seoyeong"
+        },
+        {
+            "family": "Aladağ",
+            "given": "Fatma"
+        },
+        {
+            "family": "Capurro",
+            "given": "Carlotta"
+        },
+        {
+            "family": "Damsma",
+            "given": "Levi"
+        },
+        {
+            "family": "De Vita",
+            "given": "Lorena"
+        },
+        {
+            "family": "Fahnenbruck",
+            "given": "Laura"
+        },
+        {
+            "family": "Gielis",
+            "given": "Gert"
+        },
+        {
+            "family": "Griffiths",
+            "given": "Rachael"
+        },
+        {
+            "family": "Keinan-Schoonbaert",
+            "given": "Adi"
+        },
+        {
+            "family": "Kuijpers",
+            "given": "Erika"
+        },
+        {
+            "family": "El Attal",
+            "given": "Mirjam"
+        },
+        {
+            "family": "Mühlberger",
+            "given": "Günter"
+        },
+        {
+            "family": "Noah Omollo",
+            "given": "Juma"
+        },
+        {
+            "family": "Rabus",
+            "given": "Achim"
+        },
+        {
+            "family": "Spina",
+            "given": "Salvatore"
+        },
+        {
+            "family": "Al Assali",
+            "given": "Nour"
+        },
+        {
+            "family": "Torres Flawiá",
+            "given": "Eugenio"
+        },
+        {
+            "family": "Wrisley",
+            "given": "David Joseph"
+        },
+        {
+            "family": "Wilbrink",
+            "given": "Heleen"
+        }
+    ],
+    "accessed": {
+        "date-parts": [
+            [
+                2026,
+                4,
+                20
+            ]
+        ]
+    },
+    "issued": {
+        "date-parts": [
+            [
+                2025,
+                9,
+                1
+            ]
+        ]
+    },
+    "date": "2025-09-30T21:00:00.000Z"
+}
+]}} -->
+The size of the initial training dataset was informed by existing methodological benchmarks while remaining sensitive to the specific challenges posed by Ottoman Turkish. Previous work on Transkribus-based HTR workflows suggests that approximately 10,000 words may suffice to train an individual HTR model under controlled conditions, particularly for scripts with relatively stable graphic conventions (<cite data-cite="7C13846739/2FW4SHEH36"></cite>, <cite data-cite="7C13846739/2FRBAR8ING"></cite>). However, this threshold should be understood as a minimum viable scale rather than an optimal standard. Given the paleographic heterogeneity and linguistic complexity of Ottoman Turkish manuscripts, the present study deliberately exceeded this baseline.
 
 <!-- #endregion -->
-
-The size of the initial training dataset was informed by existing methodological benchmarks while remaining sensitive to the specific challenges posed by Ottoman Turkish. Previous work on Transkribus-based HTR workflows suggests that approximately 10,000 words may suffice to train an individual HTR model under controlled conditions, particularly for scripts with relatively stable graphic conventions (Hodel 2020; Romein 2025). However, this threshold should be understood as a minimum viable scale rather than an optimal standard. Given the paleographic heterogeneity and linguistic complexity of Ottoman Turkish manuscripts, the present study deliberately exceeded this baseline.
 
 Beyond dataset composition, the methodological architecture of the training pipeline required explicit control over the structural organization of manuscript pages. Although the layout analysis model trained in this study does not directly affect the Character Error Rate (CER) of the HTR model, it plays a critical role in the overall transcription workflow by preventing marginalia, catchwords (*reddādes*), page numbers, and other paratextual elements from being conflated with the main text. When HTR is applied to full-page images or generic layout models are used, such elements typically require extensive manual correction. By contrast, the custom layout model developed for this study enables controlled segmentation in which only main-text regions are selected for HTR processing, reducing noise in the input data and minimizing manual intervention. The functional separation of layout analysis and text recognition thus supports a cleaner and more reproducible training and inference pipeline, while preserving codicological information as an independent analytical layer.
+
 <!-- #endregion -->
 
 ```python tags=["hermeneutics", "figure-layout-*"]
@@ -383,8 +1617,3 @@ Beyond technical performance metrics, the study highlights that HTR for Ottoman 
 From a methodological perspective, the study outlines a scalable roadmap for future Ottoman HTR research: the development of scribe-based sub-model families, period- and genre-specific datasets, and post-HTR validation layers potentially supported by large language models (LLMs). The integration of named entity recognition and linked open data infrastructures would further transform HTR outputs into semantically enriched, computable research data.
 
 In this sense, the contribution of this study extends beyond a single model implementation. It demonstrates that Ottoman Turkish HTR is not only technically feasible but also constitutes a sustainable and expandable research domain. By aligning machine learning practices with the historical, philological, and material complexity of Ottoman manuscript culture, the study provides a methodological foundation for future work at the intersection of digital humanities, paleography, and computational text analysis.
-
-
-<!-- #region citation-manager={"citations": {"": []}} -->
-
-<!-- #endregion -->
