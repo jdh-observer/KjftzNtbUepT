@@ -180,7 +180,6 @@ Deep learning–based Handwritten Text Recognition (HTR) systems have brought ab
 
 <!-- #endregion -->
 
-
 <!-- #region citation-manager={"citations": {"7C13846739/2FDV8SRZ7H": [{
     "id": "7C13846739/2FDV8SRZ7H",
     "type": "article-journal",
@@ -237,7 +236,6 @@ Deep learning–based Handwritten Text Recognition (HTR) systems have brought ab
 Similarly, the Transkribus platform considers CER values of 10% or below to represent efficient and practically usable results for automated transcription. Against these benchmarks, the general model developed by Hodel (<cite data-cite="7C13846739/2FDV8SRZ7H"></cite>) for German Kurrent, achieving a CER in the range of 2–5%, demonstrates an exceptionally high level of accuracy for historical material .
 
 <!-- #endregion -->
-
 
 <!-- #region citation-manager={"citations": {"7C13846739/2F5YTILZ66": [{
     "id": "7C13846739/2F5YTILZ66",
@@ -593,7 +591,6 @@ This requirement also intersects with a broader structural issue identified by N
 Beyond the challenges shared by RTL languages more generally, Ottoman Turkish introduces an additional layer of complexity in HTR workflows. While HTR models for Arabic-script languages typically operate within a single writing system, Ottoman Turkish studies often involve a two-layered process: the visual recognition of the Arabic-script text, followed by its transfer into a Latin-based writing system. This dual transformation renders Ottoman Turkish distinctive not only in paleographic terms but also with respect to its output format when compared to other Arabic-script languages.
 
 Ottoman Turkish constitutes a hybrid linguistic structure characterized by vocabulary inherited from Arabic and Persian, an agglutinative Turkish morphology, and historically contingent orthographic conventions that exhibit a high degree of internal variation. As a result, the HTR process must address more than the recognition of letterforms alone; it requires a modeling approach that is sensitive to historical context, scribal norms, and transliteration principles. Digital text recognition in Ottoman Turkish should therefore be understood as a multi-layered process that simultaneously engages with the contextual complexity of Arabic-script writing systems and the philological and epistemological implications of transferring historical texts into a modern Latin-based script.
-
 
 
 ## Rationale for Tool Selection
