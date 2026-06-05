@@ -17,9 +17,14 @@ jobs:
       # Use the output from the `hello` step
       - name: Use the output
         run: echo "number of cells ${{ steps.skim.outputs.size }} - output ${{ steps.skim.outputs.outputNotebook }}"
-      - name: commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: committing changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: '*.ipynb'
-          
- 
+          commit_message: Automated commit
+          branch: skim
+          create_branch: true
+      
+      - name: creating pull request
+        run: gh pr create -B ${{ github.ref }} -H nbconvert --title 'Comparison between skim review of the article and the main article' --body 'Created by Github action'
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
